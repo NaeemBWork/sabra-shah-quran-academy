@@ -1,0 +1,175 @@
+<!-- Hero Section with Image Background -->
+<section class="relative h-[calc(100vh-5rem)] w-full overflow-hidden">
+  <!-- Background Image (main) -->
+  <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+    [style.background-image]="'url(/assets/landing-page-background.jpg)'"></div>
+
+  <!-- Image Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/60"></div>
+
+  <!-- Logo - Bottom Left -->
+  <div class="absolute bottom-4 left-4 sm:bottom-8 sm:left-8 z-20 animate-fade-in">
+    <img src="/assets/logo-transparent.png" alt="Sabra Shah Quran Academy"
+      class="h-16 sm:h-24 md:h-32 w-auto drop-shadow-2xl" />
+  </div>
+
+  <!-- Content Overlay -->
+  <div class="relative z-10 h-full flex items-center justify-center">
+    <div class="text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+      <!-- Main Heading -->
+      <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 animate-fade-in-up">
+        <span class="block mb-1">Sabra Shah</span>
+        <span class="block text-andalusian-gold">Quran Academy</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-sm sm:text-base md:text-lg text-white/90 mb-4 font-light animate-fade-in-up-delay">
+        Preserving Knowledge • Nurturing Faith • Inspiring Generations
+      </p>
+
+      <!-- Call to Action Buttons -->
+      <div class="flex flex-col sm:flex-row gap-2 justify-center items-center animate-fade-in-up-delay-2">
+        <a href="https://www.launchgood.com/v4/campaign/help_build_a_quran_academy_a_legacy_of_learning_3?src=internal_search_discover_sabra%20shah"
+          target="_blank" rel="noopener noreferrer"
+          class="px-5 py-2.5 bg-andalusian-gold text-white rounded-lg font-semibold text-sm shadow-lg hover:bg-andalusian-dark-gold transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
+          Support Our Mission
+        </a>
+        <a routerLink="/contact"
+          class="px-5 py-2.5 bg-white/10 backdrop-blur-md text-white border-2 border-white/30 rounded-lg font-semibold text-sm hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll Indicator -->
+  <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <svg class="w-5 h-5 text-white/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+    </svg>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="py-20 bg-andalusian-cream">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-andalusian-deep-blue mb-4">
+        Welcome to Our Academy
+      </h2>
+      <div class="w-24 h-1 bg-andalusian-gold mx-auto"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h3 class="text-2xl md:text-3xl font-semibold text-andalusian-deep-blue mb-6">
+          Our Mission
+        </h3>
+        <p class="text-lg text-andalusian-warm-brown leading-relaxed mb-4">
+          Sabra Shah Quran Academy is dedicated to providing authentic Islamic education
+          and fostering a deep connection with the Quran. We strive to create an environment
+          where students can learn, grow, and develop a strong foundation in their faith.
+        </p>
+        <p class="text-lg text-andalusian-warm-brown leading-relaxed mb-6">
+          Our mission is to nurture a deep love for the Qur'an in the hearts of our community
+          in Glasgow — and beyond — by providing high-quality tajweed, tafseer, and Islamic education
+          for children, adults, and new Muslims
+        </p>
+        <a routerLink="/about"
+          class="inline-block px-6 py-3 bg-andalusian-gold text-white rounded-lg font-semibold hover:bg-andalusian-dark-gold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+          Read More
+        </a>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-video rounded-lg overflow-hidden shadow-2xl">
+          <video #videoElement autoplay muted loop playsinline class="w-full h-full object-cover">
+            <source src="/assets/landing-page-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-andalusian-gold/20 rounded-full blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-andalusian-deep-blue mb-4">
+        What We Offer
+      </h2>
+      <div class="w-24 h-1 bg-andalusian-gold mx-auto"></div>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div
+        class="text-center p-8 rounded-lg bg-andalusian-cream/50 hover:bg-andalusian-cream transition-colors duration-300">
+        <div class="w-16 h-16 bg-andalusian-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-andalusian-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-andalusian-deep-blue mb-4">Quranic Studies</h3>
+        <p class="text-andalusian-warm-brown">
+          Comprehensive study of the Holy Quran with proper Tajweed and Tafsir
+        </p>
+      </div>
+
+      <div
+        class="text-center p-8 rounded-lg bg-andalusian-cream/50 hover:bg-andalusian-cream transition-colors duration-300">
+        <div class="w-16 h-16 bg-andalusian-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-andalusian-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-andalusian-deep-blue mb-4">Islamic Education</h3>
+        <p class="text-andalusian-warm-brown">
+          Authentic Islamic teachings and guidance for all ages
+        </p>
+      </div>
+
+      <div
+        class="text-center p-8 rounded-lg bg-andalusian-cream/50 hover:bg-andalusian-cream transition-colors duration-300 sm:col-span-2 lg:col-span-1">
+        <div class="w-16 h-16 bg-andalusian-gold/20 rounded-full flex items-center justify-center mx-auto mb-6">
+          <svg class="w-8 h-8 text-andalusian-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-andalusian-deep-blue mb-4">Community</h3>
+        <p class="text-andalusian-warm-brown">
+          Building a strong, supportive community of learners and believers
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="py-20 bg-gradient-to-br from-andalusian-deep-blue to-andalusian-warm-brown text-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-6">
+      Join Us in Our Mission
+    </h2>
+    <p class="text-xl mb-8 text-white/90">
+      Your support helps us continue providing quality Islamic education
+      and preserving the teachings of the Quran for future generations.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="https://www.launchgood.com/v4/campaign/help_build_a_quran_academy_a_legacy_of_learning_3?src=internal_search_discover_sabra%20shah"
+        target="_blank" rel="noopener noreferrer"
+        class="px-8 py-4 bg-andalusian-gold text-white rounded-lg font-semibold text-lg shadow-lg hover:bg-andalusian-dark-gold transition-all duration-300 transform hover:scale-105">
+        Make a Donation
+      </a>
+      <a routerLink="/contact"
+        class="px-8 py-4 bg-white/10 backdrop-blur-md text-white border-2 border-white/30 rounded-lg font-semibold text-lg hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</section>
