@@ -1,16 +1,10 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
   {
     path: '',
-    component: HomeComponent,
+    loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
     title: 'Home - Sabra Shah Quran Academy'
-  },
-  {
-    path: 'about',
-    loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent),
-    title: 'About - Sabra Shah Quran Academy'
   },
   {
     path: 'donate',

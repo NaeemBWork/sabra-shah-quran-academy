@@ -19,17 +19,9 @@
         <a 
           routerLink="/" 
           routerLinkActive="bg-andalusian-gold/10 text-andalusian-gold"
-          [routerLinkActiveOptions]="{exact: true}"
           class="px-4 py-2 rounded-lg text-andalusian-deep-blue font-medium transition-colors duration-200 hover:bg-andalusian-cream"
         >
           Home
-        </a>
-        <a 
-          routerLink="/about" 
-          routerLinkActive="bg-andalusian-gold/10 text-andalusian-gold"
-          class="px-4 py-2 rounded-lg text-andalusian-deep-blue font-medium transition-colors duration-200 hover:bg-andalusian-cream"
-        >
-          About
         </a>
         <a 
           routerLink="/donate" 
@@ -76,18 +68,9 @@
         routerLink="/" 
         (click)="closeMenu()"
         routerLinkActive="bg-andalusian-gold/10 text-andalusian-gold"
-        [routerLinkActiveOptions]="{exact: true}"
         class="block px-4 py-3 rounded-lg text-andalusian-deep-blue font-medium transition-colors duration-200 hover:bg-andalusian-cream mb-2"
       >
         Home
-      </a>
-      <a 
-        routerLink="/about" 
-        (click)="closeMenu()"
-        routerLinkActive="bg-andalusian-gold/10 text-andalusian-gold"
-        class="block px-4 py-3 rounded-lg text-andalusian-deep-blue font-medium transition-colors duration-200 hover:bg-andalusian-cream mb-2"
-      >
-        About
       </a>
       <a 
         routerLink="/donate" 
