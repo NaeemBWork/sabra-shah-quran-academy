@@ -7,6 +7,11 @@ export const routes: Routes = [
     title: 'Home - Sabra Shah Quran Academy'
   },
   {
+    path: 'about',
+    loadComponent: () => import('./pages/about/about.component').then(m => m.AboutComponent),
+    title: 'About Us - Sabra Shah Quran Academy'
+  },
+  {
     path: 'donate',
     loadComponent: () => import('./pages/donate/donate.component').then(m => m.DonateComponent),
     title: 'Donate - Sabra Shah Quran Academy'
